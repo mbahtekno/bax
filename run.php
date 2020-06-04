@@ -1,4 +1,5 @@
 <?php
+ulang:
 $uuid = gen_uuid();
 $name = nama();
 $pecah = explode(" ",$name);
@@ -36,7 +37,8 @@ $code = trim(fgets(STDIN));
 $verify = verify($token, $code);
 echo "$verify\n";
 $profile = profile_save($first, $token);
-echo "$profile\n";
+echo "$profile\n\n";
+goto ulang;
 
 
 function regis($email, $uuid){
