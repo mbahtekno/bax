@@ -11,7 +11,7 @@ $email = $mail."@".$domain;
 
 
 $regis = regis($email, $uuid);
-echo "$regis\n$email\n";
+echo "$regis\n";
 do{
   echo color($color = "blue" , "Getting Verify Email...");
   $getmail = get_mail($domain, $mail);
