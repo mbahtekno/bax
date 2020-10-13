@@ -8,7 +8,11 @@ $last = $pecah[1];
 $domain = "luffem.com";
 $mail = strtolower(str_replace(" ", "", $name).mt_rand(10, 9999));
 $email = $mail."@".$domain;
-
+// $no = trim(fgets(STDIN));
+    $nohp = trim(fgets(STDIN));
+    $nohp = str_replace("62", "62", $nohp);
+    $nohp = str_replace("(", "", $nohp);
+    $nohp = str_replace(")", "", $nohp);
 
 $regis = regis($email, $uuid);
 echo "$regis\n$email\n";
