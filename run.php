@@ -4,8 +4,6 @@ $uuid = gen_uuid();
 $name = nama();
 $pecah = explode(" ",$name);
 $first = $pecah[0];
-$last = $pecah[1];
-$domain = "luffem.com";
 $mail = strtolower(str_replace(" ", "", $name).mt_rand(10, 9999));
 $email = $mail."@".$domain;
 
